@@ -3,17 +3,27 @@ A functional CRUD application built with Node.js, Express, and MongoDB. This pro
 
 
 Tech Stack
+
 Backend: Node.js, Express.js
+
 Database: MongoDB
+
 Environment Management: Dotenv
 
 
+
 Features
+
 Create: Add new users to the database.
+
 Read: Fetch and display a list of all users.
+
 Update: Modify existing user details using their Unique ID.
+
 Delete: Remove users from the database.
+
 Search: Real-time search bar to find specific people in the list quickly.
+
 UX UI: Interactive loading spinner to indicate data fetching states.
 
 
@@ -43,9 +53,13 @@ The app will be live at http://localhost:3000.
 
 
 API Endpoints
+
 POST /api/users - Create a new user
+
 GET /api/users - Get all users
+
 PUT /api/users/:id - Update a user by ID
+
 DELETE /api/users/:id - Delete a user by ID
 
 Developed by Orion
