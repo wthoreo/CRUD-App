@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>CRUD App</title>
+</head>
+<body>
+    <div class = "container">
+            <h1>CRUD Application</h1>
+
+            <section class = "form-section"><!--This is the input section for new user-->
+                <form id = "userForm">
+                    <input type = "text" id="name" placeholder = "Name" required>
+                    <input type = "email" id="email" placeholder = "Email" required>
+                    <button type="Submit" id="submitBtn">Add User</button>
+                </form>
+            </section>
+
+            <section class = "list-section"><!--This is where the table is show for all the users-->
+                <div class = "list-header">
+                    <h2>Users</h2>
+                    <input type="text" id="searchBar" placeholder="Search for users by their name">
+                </div>
+
+                <div id="loader" class="hidden">
+                    <div class="spinner"></div>
+                    <p>Syncing with database...</p>
+                </div>
+                
+                <ul id="userList"></ul>
+            </section>
+    </div>
+
+    <div id = "deleteModal" class="modal-overlay hidden">
+        <div class = "modal-content">
+            <h3>Are you sure?</h3>
+            <p>Do you really want to delete <span id = "deleteUserName"></span>?</p>
+            <div class = "modal-actions">
+                <button id="cancelDelete" class="btn-secondary">Cancel</button>
+                <button id="confirmDelete" class="btn-danger">Delete User</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
