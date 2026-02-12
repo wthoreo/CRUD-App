@@ -18,25 +18,24 @@ UX UI: Interactive loading spinner to indicate data fetching states.
 
 
 Setup and Installation
-Follow these steps to get the project running locally:
+1. Follow these steps to get the project running locally:
 
-Clone the repository:
-git clone https://github.com/YOUR_USERNAME/your-repo-name.git
+2. Clone the repository:
+   git clone https://github.com/YOUR_USERNAME/your-repo-name.git
 
-Enter the project directory:
-cd your-repo-name
+3. Enter the project directory:
+   cd your-repo-name
 
-Install dependencies:
+4. Install dependencies:
 npm install
 
-Environment Configuration:
+5. Environment Configuration:
 Create a file named .env in the root directory and add the following variables (replace the placeholders with your own database details):
-
 PORT=3000
 MONGODB_URI=your_mongodb_connection_string
 DB_NAME=your_database_name
 
-Run the app:
+7. Run the app:
 Make sure your MongoDB service is running, then start the server:
 node server.js
 
